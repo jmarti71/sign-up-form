@@ -1,0 +1,150 @@
+@font-face {
+    font-family: Norse-Bold;
+    src: url(./assets/Norse-Bold.otf);
+  }
+
+button {
+    border: none;
+    color: whitesmoke;
+    background-color: rgb(0, 177, 201);
+    margin-left: 40px;
+    margin-top: 30px;
+    border-radius: 6px;
+    font-size: 14px;
+    padding: 10px 20px;
+}
+
+button:hover {
+    background-color: rgb(0, 206, 234);
+    cursor:pointer;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(0, 177, 201);
+} /*do a visited hover etc. also for inputs*/
+
+a:hover {
+    text-decoration: underline;
+}
+
+html,body {
+    margin:0px;
+    height: 100%;
+}
+.outer-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.left-side {
+    width: 40vw;
+    height: 100vh;
+    background-image: url(assets/bg-image.jpg);
+    background-size: cover;
+    background-color: rgb(77, 26, 26);   
+}
+
+.logo-container {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    background-color: rgba(48, 82, 82, 0.48);
+    position: relative;
+    top: 32%;
+}
+
+.logo-container > p{
+    margin: 12px 0 0 0;
+    font-size: 72px;
+    color: rgb(255, 255, 255);
+    font-family: 'Norse-Bold', Arial;  
+    line-height: normal;
+}
+
+.logo-container > img{
+    width:16%;
+    height:16%;
+}
+
+.right-side {
+    width: 60vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(245, 245, 245)
+}
+
+.right-head-container {
+    
+    padding-top: 10%;
+    margin: 0;
+}
+
+.right-head-container p{
+    font-size: 24px;
+    font-style: bold;
+    margin: 40px;
+}
+
+.form-heading > h4 {
+    margin-left: 40px;
+}
+
+.right-mid-container {
+    display: flex;
+    flex-direction: column;
+    box-shadow:  0px 2px 8px #c5c5c5;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    padding-bottom: 20px;
+}
+
+.form-container {
+    display: flex;
+    justify-content: left;
+    gap: 18%;
+    margin-left: 40px;
+}
+
+.form-container input {
+    margin-bottom: 20px;
+    height: 22px;
+    width: 18vw;
+    border-color: #E5E7EB;
+    border-style:solid;
+    border-width: 1px;
+    border-radius: 4px;
+    font-size: 15px;
+    background-color: rgb(255, 254, 254);
+}
+
+.form-container input:focus {
+    outline: none !important;
+    border-color: rgb(0, 177, 201);
+    box-shadow:  2px 2px 5px #c5c5c5;
+}
+
+form>label {
+    font-size: 12px;
+}
+
+.right-bottom-container {
+    padding:0;
+    margin: 0;
+}
+
+.right-bottom-container > p{
+    margin-left: 40px;
+}
+
+.error_message {
+    display: none;
+    font-size: 10px;
+    color: rgb(91, 0, 0);
+    margin: 0;
+}

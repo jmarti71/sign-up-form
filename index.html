@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Afterglow Sign-up</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="outer-container">
+        <div class="left-side">
+            <div class=logo-container>
+                <img src="./assets/odin-lined.png">
+                <p>AFTERGLOW</p>
+            </div>
+        </div>
+        <div class="right-side">
+            <div class="right-head-container">
+                <p>This is not a real online service! This is a template form page created as an assignment for The Odin Project. Sign up <em>now</em> to get started.</p>
+                <p>You <em>know</em> what to do.</p>
+            </div>
+            <div class="right-mid-container">
+            <form action="#">
+                <div class="form-heading">
+                    <h4>Let's do this!</h4>
+                </div>                
+                <div class="form-container">
+                    <div class="left-form">                                          
+                            <label for="first_name">First Name</label><br>
+                            <input type="text" id="first_name" required><br>
+                            <label for="user_email">Email</label><br>
+                            <input type="email" id="user_email" name="email" title="example: example@email.com" required><br>
+                            <label for="user_password">Password</label><br>
+                            <input type="password" id="user_password" name="password" title="passwords must match"required><br>
+                            <p class="error_message">*passwords do not match</p>                    
+                    </div>
+                    <div class="right-form">
+                        <label for="last_name">Last Name</label><br>
+                        <input type="text" id="last_name" required><br>
+                        <label for="user_phone">Phone Number</label><br>
+                        <input type="phone_number" id="user_phone" pattern="\d{3}[\-]\d{3}[\-]\d{4}" name="phone_number" 
+                         title="example: 000-000-0000" required><br>
+                        <label for="confirm_user_password">Confirm Password</label><br>
+                        <input type="password" id="confirm_user_password" name="password" title="passwords must match" required><br>                       
+                    </div>
+                </div>               
+            </div>
+            <div class="right-bottom-container">                
+                <button type="submit">Create Account</button>
+                <p>Already signed-up? <a href="#">Log In</a></p>
+            </div>
+            </form>
+            <script>
+                const doc_form = document.querySelector('form');
+                const pass = document.querySelector('#user_password');
+                const pass_confirm = document.querySelector('#confirm_user_password');
+                const error_text = document.querySelector('.error_message');                
+                    doc_form.addEventListener('submit', e => {                   
+                        if (pass.value !== pass_confirm.value) {
+                            e.preventDefault();
+                            error_text.style.display = 'block';                       
+                        }
+                    });
+            </script>
+        </div>
+    </div>    
+</body>
+</html>
