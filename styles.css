@@ -22,7 +22,7 @@ button:hover {
 a{
     text-decoration: none;
     color: rgb(0, 177, 201);
-} /*do a visited hover etc. also for inputs*/
+}
 
 a:hover {
     text-decoration: underline;
@@ -129,7 +129,12 @@ html,body {
     box-shadow:  2px 2px 5px #c5c5c5;
 }
 
-form>label {
+.form-container .highlight {
+    border-color: rgb(184, 22, 0);
+    box-shadow:  2px 2px 5px #c5c5c5;
+}
+
+label {
     font-size: 12px;
 }
 
