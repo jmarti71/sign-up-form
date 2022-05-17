@@ -27,13 +27,13 @@
                 </div>                
                 <div class="form-container">
                     <div class="left-form">                                          
-                            <label for="first_name">First Name</label><br>
-                            <input type="text" id="first_name" required><br>
-                            <label for="user_email">Email</label><br>
-                            <input type="email" id="user_email" name="email" title="example: example@email.com" required><br>
-                            <label for="user_password">Password</label><br>
-                            <input type="password" id="user_password" name="password" title="passwords must match"required><br>
-                            <p class="error_message">*passwords do not match</p>                    
+                        <label for="first_name">First Name</label><br>
+                        <input type="text" id="first_name" required><br>
+                        <label for="user_email">Email</label><br>
+                        <input type="email" id="user_email" name="email" title="example: example@email.com" required><br>
+                        <label for="user_password">Password</label><br>
+                        <input type="password" id="user_password" name="password" title="passwords must match"required><br>
+                        <p class="error_message">*passwords must match</p>                    
                     </div>
                     <div class="right-form">
                         <label for="last_name">Last Name</label><br>
@@ -59,7 +59,9 @@
                     doc_form.addEventListener('submit', e => {                   
                         if (pass.value !== pass_confirm.value) {
                             e.preventDefault();
-                            error_text.style.display = 'block';                       
+                            error_text.style.display = 'block';  
+                            pass.className = "highlight";
+                            pass_confirm.className = "highlight";                   
                         }
                     });
             </script>
