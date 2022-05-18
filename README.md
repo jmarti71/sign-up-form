@@ -1,1 +1,8 @@
-# sign-up-form
+# Afterglow Sign-up Form
+##Description
+
+Check it out: https://jmarti71.github.io/sign-up-form/
+
+Afterglow comes from an Odin Project assignment that instructed students to create a front end sign-up form webpage using this image as a reference: https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/sign-up-form.png.
+
+I created my sign-up form with some variation from the reference image using HTML, CSS, and a little bit of JavaScript. I found this assignment to be a good introduction for students to get their hands dirty when it comes to basic use and manipulation of form elements. Some form features that I used in this project were the built in HTML form validators, the pattern validator when users enter their phone number(US), and a password match validator that will display an error message and highlight the password boxes if the user enters non-identical passwords. The password match validator is written in the script section of the HTML file. I also used this project as a way to practice using new-to-me CSS selectors, including the child combinator(>) and the general sibling combinator(~). For the sake of practice, I also implemented a CSS variable defining a custom left-margin property at the root element. I declared it at the root for accessibility within the entire scope of the document. And finally, I used the "@font-face" property to bring in a custom font and made use of the ":hover" and ":focus" pseudo-classes to enhance the user interactivity of the webpage.
