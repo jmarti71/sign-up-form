@@ -1,5 +1,5 @@
 # Afterglow Sign-up Form
-##Description
+## Description
 
 Check it out: https://jmarti71.github.io/sign-up-form/
 
